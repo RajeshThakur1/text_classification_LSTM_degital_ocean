@@ -1,8 +1,8 @@
 from flask import Flask
-
-app = Flask("/",methods=["GET", "POST"])
+app = Flask(__name__)
+@app.route("/", methods=["GET", "POST"])
 def index():
     return "Hello world"
 
-if __name__=="__mail__":
-    app.run(port=8081)
+if __name__=="__main__":
+    app.run(port=8080)

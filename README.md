@@ -10,3 +10,10 @@ conda create -p venv python==3.7 -y
 ```commandline
 pythoc setup.py install
 ```
+setup Degital ocean
+app
+select github
+select your repo
+select the branch
+check auto deploy
+click on next
