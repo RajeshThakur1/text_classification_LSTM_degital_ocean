@@ -18,4 +18,5 @@ select the branch
 check auto deploy
 click on next
 command: gunicorn --worker-tmp-dir /dev/shm app:app
+                                           filename:flaskObject
 build the gproject
