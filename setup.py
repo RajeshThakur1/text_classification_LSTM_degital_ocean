@@ -1,6 +1,7 @@
 from setuptools import setup, find_packages
-REMOVE_PACKAGE = ".e"
+REMOVE_PACKAGE = "-e ."
 REQUIREMENT_FILE_NAME= "requirements.txt"
+
 def get_requirement_list(requirement_file_name= REQUIREMENT_FILE_NAME) -> list:
     try:
         with open(requirement_file_name) as requirement_file:
@@ -8,7 +9,7 @@ def get_requirement_list(requirement_file_name= REQUIREMENT_FILE_NAME) -> list:
             requirement_list.remove(REMOVE_PACKAGE)
         return requirement_list
     except Exception as e:
-        pass
+        raise e
 
 setup(
     name= "lstm-text-classification",
