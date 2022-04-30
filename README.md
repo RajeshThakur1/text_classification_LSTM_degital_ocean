@@ -17,3 +17,5 @@ select your repo
 select the branch
 check auto deploy
 click on next
+command: gunicorn --worker-tmp-dir /dev/shm app:app
+build the gproject
