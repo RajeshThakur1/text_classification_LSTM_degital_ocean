@@ -33,10 +33,10 @@ def log_function_signature(func):
         return response
 
     return inner
-#
-@log_function_signature
-def print_text(msg):
-    print(msg)
 
-if __name__=="__main__":
-    print_text("Avnish")
+# @log_function_signature
+# def print_text(msg):
+#     print(msg)
+#
+# if __name__=="__main__":
+#     print_text("Avnish")
