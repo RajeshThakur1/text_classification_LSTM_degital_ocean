@@ -1,2 +1,6 @@
 Flask
+pyyaml
+tensorflow
+tensorflow-datasets
+matplotlib
 -e .
